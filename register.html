@@ -75,12 +75,14 @@
         });
 
         if (response.status === 200) {
+
           document.getElementById("verif").style.color = "green";
           document.getElementById("verif").innerHTML = "CPF disponível.";
         } else {
           document.getElementById("verif").style.color = "red";
           document.getElementById("verif").innerHTML = "CPF inválido.";
           document.getElementById("cpf").focus();
+          
         }
       });
 
